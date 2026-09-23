@@ -1,0 +1,22 @@
+[project]
+name = "agentic-rag-platform"
+version = "0.1.0"
+description = "企业级 Agentic RAG 知识库问答平台（教学项目）"
+readme = "README.md"
+authors = [
+    { name = "xcdh", email = "2735516933@qq.com" }
+]
+requires-python = ">=3.11"
+dependencies = [
+    "openai>=3.17.0",
+    "pydantic-settings>=2.15.0",
+    "python-dotenv>=1.2.3",
+]
+
+# 应用模式（非可安装包）：直接用 app/ 目录组织代码
+[tool.uv]
+package = false
+
+[[tool.uv.index]]
+url = "https://mirrors.aliyun.com/pypi/simple/"
+default = true
